@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(243, 219, 112);
+}
+
+img {
+    background-color: rgb(243, 219, 112);
+}
+h2 {
+    color: red;
+}
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  button {
+      text-align: center;
+      background-color: cornflowerblue;
+  }
