@@ -5,6 +5,7 @@ $(function() {
         var id = $(this).data("id");
         var newBurger = $(this).data("newburger");
         var newDevour = $(this).data("newdevour");
+        console.log("id: " + id);
 
         var newEatState = {
         devoured: newDevour

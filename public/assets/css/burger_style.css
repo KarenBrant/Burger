@@ -11,8 +11,8 @@ h2 {
 }
 
 #burger-name {
-    height: 40px;
-    width: 200 px;
+    height: 60px;
+    width: 300 px;
 }
 
 .item-list {
@@ -21,6 +21,7 @@ h2 {
     height: 40px;
     width: 200px;
     float: left;
+    padding-left: 5px;
 }
 
 #devour {
@@ -29,6 +30,8 @@ h2 {
     width: 80px;
     margin-left: 5px;
     font-size: 12px;
+    padding-left: 5px;
+    margin-top: 10px;
 }
 
   .create-update-form {
