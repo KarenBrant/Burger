@@ -5,10 +5,32 @@ body {
 img {
     background-color: rgb(243, 219, 112);
 }
+
 h2 {
     color: red;
 }
-  
+
+#burger-name {
+    height: 40px;
+    width: 200 px;
+}
+
+.item-list {
+    background-color: white;
+    font-size: 12px;
+    height: 40px;
+    width: 200px;
+    float: left;
+}
+
+#devour {
+    float: left;
+    height: 25px;
+    width: 80px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
   .create-update-form {
     padding: 5px;
     margin: 5px;

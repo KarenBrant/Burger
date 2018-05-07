@@ -3,18 +3,20 @@
 </div>
 
 <h2 class="text-center">Eat-Da-Burger!</h2>
-
+<br>
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-4">
       <ul id="not-eaten">
         {{#each burgers}}
           {{#unless devoured}}
-              <p>{{id}} {{burger_name}}
-                  <button class="devour" data-id="{{id}}" data-newburger="{{burger_name}}" data-newdevour="{{devoured}}">
-                    DEVOUR IT!
-                  </button>
-              </p>
+              <div>
+                <p class="item-list" class="border">{{id}} {{burger_name}} 
+                </p>
+                <button id="devour" class="btn btn-light" type="button" data-id="{{id}}" data-newburger="{{burger_name}}" data-newdevour="{{devoured}}">
+                  DEVOUR IT!
+                </button>
+              </div>
           {{/unless}}
         {{/each}}
       </ul>      
@@ -23,7 +25,7 @@
       <ul id="eaten">
         {{#each burgers}}
           {{#if devoured}}
-            <p>{{id}} {{burger_name}}</p>
+            <p class="item-list">{{id}} {{burger_name}}</p>
           {{/if}}
         {{/each}}
       </ul>     
@@ -40,6 +42,7 @@
     <input type="text" id="burger-name" name="name">
   </div>
   <button id="change-eat" type="submit">Submit</button>
+  <br>
   <p class="text-center">Enter a burger you want to eat, then click the Submit button.</p>
 </form>
 
