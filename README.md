@@ -8,4 +8,4 @@
 burger will be displayed on the left side of the screen with a DEVOUR IT! button beside it.  After it is eaten, click the 
 DEVOUR IT! button and then it will move to the devoured (right side of the screen).
 
-Heroku link - https://
+Heroku link - https://protected-bayou-98781.herokuapp.com/
