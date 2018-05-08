@@ -1,12 +1,11 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-     $("#devour").on("click", function(event) {
-        console.log("in the devour function");
+     $(".devour").on("click", function(event) {
         var id = $(this).data("id");
         var newBurger = $(this).data("newburger");
         var newDevour = $(this).data("newdevour");
-        console.log("id: " + id);
 
+        // Pick up the new value for Devour
         var newEatState = {
         devoured: newDevour
     }
@@ -17,7 +16,6 @@ $(function() {
     data: newEatState
     }).then(
     function() {
-        console.log("changed to", newDevour);
         // Reload the page to get the updated list
         location.reload();
     }
@@ -28,6 +26,7 @@ $(function() {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
 
+        // Get values for the new burger.  Devoured should always false for a new burger.
         var newBurger = {
         burger_name: $("#burger-name").val().trim(),
         devoured: 0
@@ -39,13 +38,10 @@ $(function() {
         data: newBurger
         }).then(
         function() {
-            console.log("created new burger");
 
-            // Reload the page to get the updated list
-            location.reload();
+        // Reload the page to get the updated list
+        location.reload();
         }
         );
     });
-    // $("#burger-name").val("");
-    // $("#devoured").val("");
 }); 

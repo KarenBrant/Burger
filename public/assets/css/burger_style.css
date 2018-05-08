@@ -12,7 +12,7 @@ h2 {
 
 #burger-name {
     height: 60px;
-    width: 300 px;
+    width: 300px;
 }
 
 .item-list {
@@ -21,31 +21,32 @@ h2 {
     height: 40px;
     width: 200px;
     float: left;
-    padding-left: 5px;
+    padding-left: 7px;
+    padding-top: 5px;
 }
 
-#devour {
+.devour {
     float: left;
     height: 25px;
     width: 80px;
     margin-left: 5px;
-    font-size: 12px;
+    font-size: 10px;
     padding-left: 5px;
-    margin-top: 10px;
+    margin-top: 7px;
 }
 
-  .create-update-form {
+.create-update-form {
     padding: 5px;
     margin: 5px;
     background: aqua;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     align-items: center;
     margin-bottom: 5px;
-  }
+}
 
-  button {
-      text-align: center;
-      background-color: cornflowerblue;
-  }
+button {
+    text-align: center;
+    background-color: cornflowerblue;
+}
